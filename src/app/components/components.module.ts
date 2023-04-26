@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { WorksComponent } from './works/works.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 
@@ -15,17 +16,19 @@ import { WorksComponent } from './works/works.component';
     HeaderComponent,
     WorksComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    TestimonialsComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    NavbarComponent,
-    HeaderComponent,
-    WorksComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    NavbarComponent,
+    TestimonialsComponent,
+    WorksComponent,
   ]
 })
 export class ComponentsModule { }
